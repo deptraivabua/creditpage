@@ -1,3 +1,42 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:700,400,var(--single-line-body-base-font-weight),var(--title-page-font-weight),600|Roboto:var(--m3-display-medium-emphasized-font-weight)");
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --single-line-body-base-font-family: "Inter", Helvetica;
+    --single-line-body-base-font-weight: 400;
+    --single-line-body-base-font-size: 16px;
+    --single-line-body-base-letter-spacing: 0px;
+    --single-line-body-base-line-height: 100%;
+    --single-line-body-base-font-style: normal;
+    --title-page-font-family: "Inter", Helvetica;
+    --title-page-font-weight: 700;
+    --title-page-font-size: 48px;
+    --title-page-letter-spacing: -0.96px;
+    --title-page-line-height: 120.00000762939453%;
+    --title-page-font-style: normal;
+    --m3-display-medium-emphasized-font-family: "Roboto", Helvetica;
+    --m3-display-medium-emphasized-font-weight: 500;
+    --m3-display-medium-emphasized-font-size: 45px;
+    --m3-display-medium-emphasized-letter-spacing: 0px;
+    --m3-display-medium-emphasized-line-height: 52px;
+    --m3-display-medium-emphasized-font-style: normal;
+}
 .credits {
     background-color: transparent;
     display: grid;

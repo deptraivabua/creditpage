@@ -204,7 +204,7 @@ a {
 .credits .navigation-pill-list {
     display: flex;
     flex-wrap: wrap;
-    width: 646px;
+    width: 100%;
     align-items: flex-start;
     justify-content: flex-end;
     gap: 8px 8px;
@@ -332,15 +332,15 @@ a {
 }
 .credits .overlap-group-3 {
     position: absolute;
-    width: 912px;
+    width: 100%;
     height: 99px;
     top: 0;
-    left: 288px;
+    left: 0;
 }
 
 .credits .header {
     flex-wrap: wrap;
-    width: 912px;
+    width: 100%;
     height: 99px;
     gap: 0px 24px;
     padding: 32px;
@@ -463,29 +463,9 @@ a {
     font-style: var(--single-line-body-base-font-style);
 }
 
-.credits .navigation-pill-2 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 8px;
-    position: absolute;
-    top: 33px;
-    left: 83px;
-    border-radius: 8px;
-}
 
-.credits .navigation-pill-3 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 8px;
-    position: absolute;
-    top: 33px;
-    left: 152px;
-    border-radius: 8px;
-}
+
+
 
 .credits .img {
     position: absolute;

@@ -2,6 +2,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Inter:400,600,700|Roboto:500");
 
+
+
 /***  Credit Page ***/
 
 /* FACTS CONTAINER */
@@ -43,28 +45,27 @@ a {
     --m3-display-medium-emphasized-line-height: 52px;
     --m3-display-medium-emphasized-font-style: normal;
 }
-
 .credits {
     background-color: transparent;
     display: grid;
     justify-items: center;
     align-items: start;
     width: 100vw;
-    min-height: 100vh;
 }
 
 .credits .div {
+    max-width: 100%;
     width: 100%;
-    max-width: none;
-    min-height: 6136px;
+    height: 6136px;
     position: relative;
 }
 
 .credits .footer {
     position: absolute;
+    max-width: 100%;
     width: 100%;
     height: 511px;
-    bottom: 0;
+    top: 5625px;
     left: 0;
     background-color: #cd3c3cde;
     overflow: hidden;
@@ -75,15 +76,15 @@ a {
 
 .credits .overlap {
     position: relative;
-    width: 100%;
+    width: 1399px;
     height: 794px;
     top: -146px;
-    left: 0;
+    left: -65px;
 }
 
 .credits .overlap-group {
     position: absolute;
-    width: 100%;
+    width: 1399px;
     height: 794px;
     top: 0;
     left: 0;
@@ -91,10 +92,10 @@ a {
 
 .credits .ellipse {
     position: absolute;
-    width: min(779px, 50%);
+    width: 779px;
     height: 794px;
     top: 0;
-    right: 0;
+    left: 620px;
     background-color: #110a4a;
     border-radius: 389.5px / 397px;
 }
@@ -103,7 +104,7 @@ a {
     position: absolute;
     height: 30px;
     top: 558px;
-    right: calc(50% - 250px);
+    left: 692px;
     font-family: "Inter", Helvetica;
     font-weight: 400;
     color: #ffffff;
@@ -116,7 +117,7 @@ a {
     position: absolute;
     height: 20px;
     top: 533px;
-    right: calc(50% - 250px);
+    left: 692px;
     font-family: "Inter", Helvetica;
     font-weight: 600;
     color: #ffffff;
@@ -130,7 +131,7 @@ a {
     position: absolute;
     height: 20px;
     top: 409px;
-    right: calc(50% - 250px);
+    left: 692px;
     font-family: "Inter", Helvetica;
     font-weight: 600;
     color: #ffffff;
@@ -142,10 +143,10 @@ a {
 
 .credits .website-created-for {
     position: absolute;
-    width: min(562px, 40%);
+    width: 562px;
     height: 75px;
     top: 434px;
-    right: calc(50% - 250px);
+    left: 692px;
     font-family: "Inter", Helvetica;
     font-weight: 400;
     color: #ffffff;
@@ -158,7 +159,7 @@ a {
     position: absolute;
     height: 20px;
     top: 290px;
-    right: calc(50% - 250px);
+    left: 692px;
     font-family: "Inter", Helvetica;
     font-weight: 600;
     color: #ffffff;
@@ -170,10 +171,10 @@ a {
 
 .credits .we-acknowledge-the {
     position: absolute;
-    width: min(460px, 35%);
+    width: 460px;
     height: 86px;
     top: 310px;
-    right: calc(50% - 250px);
+    left: 692px;
     font-family: "Inter", Helvetica;
     font-weight: 400;
     color: #ffffff;
@@ -187,7 +188,7 @@ a {
     width: 124px;
     height: 83px;
     top: 170px;
-    right: calc(50% - 350px);
+    left: 890px;
     object-fit: cover;
 }
 
@@ -196,20 +197,20 @@ a {
     width: 124px;
     height: 83px;
     top: 170px;
-    right: calc(50% - 200px);
+    left: 755px;
     object-fit: cover;
 }
 
 .credits .navigation-pill-list {
     display: flex;
     flex-wrap: wrap;
-    width: min(646px, 50%);
+    width: 646px;
     align-items: flex-start;
     justify-content: flex-end;
     gap: 8px 8px;
     position: absolute;
     top: 170px;
-    left: 5%;
+    left: 0;
 }
 
 .credits .navigation-pill {
@@ -245,7 +246,7 @@ a {
     padding: 8px;
     position: absolute;
     top: 170px;
-    left: calc(5% + 150px);
+    left: 153px;
     border-radius: 8px;
 }
 
@@ -257,7 +258,7 @@ a {
     padding: 8px;
     position: absolute;
     top: 170px;
-    left: calc(5% + 80px);
+    left: 79px;
     border-radius: 8px;
 }
 
@@ -266,7 +267,7 @@ a {
     width: 336px;
     height: 106px;
     top: 291px;
-    left: calc(5% + 150px);
+    left: 156px;
 }
 
 .credits .overlap-group-2 {
@@ -313,9 +314,9 @@ a {
 
 .credits .credit-body {
     position: absolute;
+    max-width: 100%;
     width: 100%;
-    height: auto;
-    min-height: calc(100vh - 511px);
+    height: 5625px;
     top: 0;
     left: 0;
     background-color: #ffffff;
@@ -323,23 +324,23 @@ a {
 
 .credits .div-2 {
     position: absolute;
+    max-width: 100%;
     width: 100%;
     height: 99px;
     top: 0;
     left: 0;
 }
-
 .credits .overlap-group-3 {
     position: absolute;
-    width: calc(100% - 288px);
+    width: 912px;
     height: 99px;
     top: 0;
-    right: 0;
+    left: 288px;
 }
 
 .credits .header {
     flex-wrap: wrap;
-    width: 100%;
+    width: 912px;
     height: 99px;
     gap: 0px 24px;
     padding: 32px;
@@ -523,6 +524,7 @@ a {
 
 .credits .overlap-2 {
     position: absolute;
+    max-width: 100%;
     width: 100%;
     height: 511px;
     top: 99px;
@@ -533,7 +535,7 @@ a {
 .credits .text-wrapper-5 {
     position: absolute;
     top: 225px;
-    left: 10%;
+    left: 173px;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
     color: #ffffff;
@@ -545,10 +547,10 @@ a {
 }
 
 .credits .image {
-    width: min(637px, 45%);
+    width: 637px;
     height: 445px;
     top: 33px;
-    right: 5%;
+    left: 512px;
     border-radius: 35px;
     position: absolute;
     object-fit: cover;
@@ -559,8 +561,7 @@ a {
     width: 371px;
     height: 67px;
     top: 728px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 415px;
     background-color: #3951b3;
     border-radius: 25px;
 }
@@ -584,13 +585,13 @@ a {
     width: 165px;
     height: 165px;
     top: 875px;
-    left: 10%;
+    left: 106px;
     object-fit: cover;
 }
 
 .credits .online-training-2 {
     top: 1118px;
-    left: 10%;
+    left: 106px;
     position: absolute;
     width: 165px;
     height: 165px;
@@ -599,7 +600,7 @@ a {
 
 .credits .online-training-3 {
     top: 1350px;
-    right: 10%;
+    left: 932px;
     position: absolute;
     width: 165px;
     height: 165px;
@@ -608,7 +609,7 @@ a {
 
 .credits .online-training-4 {
     top: 1594px;
-    right: 10%;
+    left: 932px;
     position: absolute;
     width: 165px;
     height: 165px;
@@ -618,7 +619,7 @@ a {
 .credits .bui-gia-huy {
     position: absolute;
     top: 904px;
-    left: calc(10% + 200px);
+    left: 355px;
     font-family: var(--m3-display-medium-emphasized-font-family);
     font-weight: var(--m3-display-medium-emphasized-font-weight);
     color: #000000;
@@ -631,7 +632,7 @@ a {
 .credits .dang-minh-tam {
     position: absolute;
     top: 1391px;
-    right: calc(10% + 200px);
+    left: 510px;
     font-family: var(--m3-display-medium-emphasized-font-family);
     font-weight: var(--m3-display-medium-emphasized-font-weight);
     color: #000000;
@@ -645,7 +646,7 @@ a {
 .credits .huynh-minh-nam {
     position: absolute;
     top: 1624px;
-    right: calc(10% + 240px);
+    left: 477px;
     font-family: var(--m3-display-medium-emphasized-font-family);
     font-weight: var(--m3-display-medium-emphasized-font-weight);
     color: #000000;
@@ -659,7 +660,7 @@ a {
 .credits .bui-duc-toan {
     position: absolute;
     top: 1148px;
-    left: calc(10% + 200px);
+    left: 355px;
     font-family: var(--m3-display-medium-emphasized-font-family);
     font-weight: var(--m3-display-medium-emphasized-font-weight);
     color: #000000;
@@ -674,8 +675,7 @@ a {
     width: 320px;
     height: 81px;
     top: 1806px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 440px;
     background-image: url(https://c.animaapp.com/mfbzqk8myGtnOK/img/rectangle-19.svg);
     background-size: 100% 100%;
 }
@@ -697,7 +697,7 @@ a {
 
 .credits .text-wrapper-8 {
     top: 1917px;
-    left: 2%;
+    left: 20px;
     position: absolute;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
@@ -712,6 +712,7 @@ a {
 
 .credits .overlap-5 {
     position: absolute;
+    max-width: 100%;
     width: 100%;
     height: 730px;
     top: 1979px;
@@ -720,7 +721,7 @@ a {
 
 .credits .text-wrapper-9 {
     top: 672px;
-    right: 2%;
+    left: 947px;
     position: absolute;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
@@ -735,7 +736,8 @@ a {
 
 .credits .image-2 {
     width: 100%;
-    height: 674px;
+    max-width: 100%;
+    height: auto;
     top: 0;
     left: 0;
     position: absolute;
@@ -744,6 +746,7 @@ a {
 
 .credits .overlap-6 {
     position: absolute;
+    max-width: 100%;
     width: 100%;
     height: 721px;
     top: 3407px;
@@ -752,7 +755,7 @@ a {
 
 .credits .text-wrapper-10 {
     top: 0;
-    left: 2%;
+    left: 20px;
     position: absolute;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
@@ -767,8 +770,9 @@ a {
 
 .credits .image-3 {
     width: 100%;
-    height: 671px;
-    top: 50px;
+    max-width: 100%;
+    height: auto;
+    top: 50px; /* giữ nguyên offset cũ */
     left: 0;
     position: absolute;
     object-fit: cover;
@@ -776,7 +780,7 @@ a {
 
 .credits .text-wrapper-11 {
     top: 4145px;
-    right: 2%;
+    left: 949px;
     position: absolute;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
@@ -791,16 +795,17 @@ a {
 
 .credits .image-4 {
     width: 100%;
-    height: 676px;
+    max-width: 100%;
+    height: auto;
     top: 4218px;
     left: 0;
     position: absolute;
     object-fit: cover;
 }
-
 .credits .image-5 {
     width: 100%;
-    height: 672px;
+    max-width: 100%;
+    height: auto;
     top: 2717px;
     left: 0;
     position: absolute;
@@ -809,6 +814,7 @@ a {
 
 .credits .overlap-7 {
     position: absolute;
+    max-width: 100%;
     width: 100%;
     height: 731px;
     top: 4894px;
@@ -820,7 +826,7 @@ a {
     position: absolute;
     height: 29px;
     top: 279px;
-    left: 7%;
+    left: 85px;
     font-family: "Inter", Helvetica;
     font-weight: 700;
     color: #ffffff;
@@ -834,7 +840,7 @@ a {
     position: absolute;
     height: 48px;
     top: 213px;
-    left: 7%;
+    left: 85px;
     font-family: "Inter", Helvetica;
     font-weight: 700;
     color: #ffffff;
@@ -846,10 +852,10 @@ a {
 
 .credits .businessman-choosing {
     position: absolute;
-    width: min(626px, 45%);
+    width: 626px;
     height: 443px;
     top: 120px;
-    right: 5%;
+    left: 488px;
     border-radius: 25px;
     object-fit: cover;
 }
@@ -858,68 +864,8 @@ a {
     width: 260px;
     height: 70px;
     top: 342px;
-    left: 8%;
+    left: 96px;
     background-color: #ffffff;
     position: absolute;
     border-radius: 25px;
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    :root {
-        --title-page-font-size: 36px;
-        --m3-display-medium-emphasized-font-size: 32px;
-    }
-
-    .credits .online-training,
-    .credits .online-training-2,
-    .credits .online-training-3,
-    .credits .online-training-4 {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media (max-width: 768px) {
-    :root {
-        --title-page-font-size: 28px;
-        --m3-display-medium-emphasized-font-size: 24px;
-        --single-line-body-base-font-size: 14px;
-    }
-
-    .credits .header {
-        padding: 16px;
-        flex-direction: column;
-        height: auto;
-        min-height: 120px;
-    }
-
-    .credits .ellipse {
-        width: 60%;
-    }
-
-    .credits .navigation-pill-list {
-        width: 90%;
-        left: 5%;
-    }
-
-    .credits .online-training,
-    .credits .online-training-2,
-    .credits .online-training-3,
-    .credits .online-training-4 {
-        width: 100px;
-        height: 100px;
-    }
-
-    .credits .overlap-3 {
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .credits .overlap-4 {
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }

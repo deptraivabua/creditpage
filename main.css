@@ -1,5 +1,11 @@
+/* External CSS style file */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Inter:700,400,var(--single-line-body-base-font-weight),var(--title-page-font-weight),600|Roboto:var(--m3-display-medium-emphasized-font-weight)");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600,700|Roboto:500");
+
+/***  Credit Page ***/
+
+/* FACTS CONTAINER */
+
 * {
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
@@ -37,25 +43,28 @@ a {
     --m3-display-medium-emphasized-line-height: 52px;
     --m3-display-medium-emphasized-font-style: normal;
 }
+
 .credits {
     background-color: transparent;
     display: grid;
     justify-items: center;
     align-items: start;
     width: 100vw;
+    min-height: 100vh;
 }
 
 .credits .div {
-    width: 1200px;
-    height: 6136px;
+    width: 100%;
+    max-width: none;
+    min-height: 6136px;
     position: relative;
 }
 
 .credits .footer {
     position: absolute;
-    width: 1200px;
+    width: 100%;
     height: 511px;
-    top: 5625px;
+    bottom: 0;
     left: 0;
     background-color: #cd3c3cde;
     overflow: hidden;
@@ -66,15 +75,15 @@ a {
 
 .credits .overlap {
     position: relative;
-    width: 1399px;
+    width: 100%;
     height: 794px;
     top: -146px;
-    left: -65px;
+    left: 0;
 }
 
 .credits .overlap-group {
     position: absolute;
-    width: 1399px;
+    width: 100%;
     height: 794px;
     top: 0;
     left: 0;
@@ -82,10 +91,10 @@ a {
 
 .credits .ellipse {
     position: absolute;
-    width: 779px;
+    width: min(779px, 50%);
     height: 794px;
     top: 0;
-    left: 620px;
+    right: 0;
     background-color: #110a4a;
     border-radius: 389.5px / 397px;
 }
@@ -94,7 +103,7 @@ a {
     position: absolute;
     height: 30px;
     top: 558px;
-    left: 692px;
+    right: calc(50% - 250px);
     font-family: "Inter", Helvetica;
     font-weight: 400;
     color: #ffffff;
@@ -107,7 +116,7 @@ a {
     position: absolute;
     height: 20px;
     top: 533px;
-    left: 692px;
+    right: calc(50% - 250px);
     font-family: "Inter", Helvetica;
     font-weight: 600;
     color: #ffffff;
@@ -121,7 +130,7 @@ a {
     position: absolute;
     height: 20px;
     top: 409px;
-    left: 692px;
+    right: calc(50% - 250px);
     font-family: "Inter", Helvetica;
     font-weight: 600;
     color: #ffffff;
@@ -133,10 +142,10 @@ a {
 
 .credits .website-created-for {
     position: absolute;
-    width: 562px;
+    width: min(562px, 40%);
     height: 75px;
     top: 434px;
-    left: 692px;
+    right: calc(50% - 250px);
     font-family: "Inter", Helvetica;
     font-weight: 400;
     color: #ffffff;
@@ -149,7 +158,7 @@ a {
     position: absolute;
     height: 20px;
     top: 290px;
-    left: 692px;
+    right: calc(50% - 250px);
     font-family: "Inter", Helvetica;
     font-weight: 600;
     color: #ffffff;
@@ -161,10 +170,10 @@ a {
 
 .credits .we-acknowledge-the {
     position: absolute;
-    width: 460px;
+    width: min(460px, 35%);
     height: 86px;
     top: 310px;
-    left: 692px;
+    right: calc(50% - 250px);
     font-family: "Inter", Helvetica;
     font-weight: 400;
     color: #ffffff;
@@ -178,7 +187,7 @@ a {
     width: 124px;
     height: 83px;
     top: 170px;
-    left: 890px;
+    right: calc(50% - 350px);
     object-fit: cover;
 }
 
@@ -187,20 +196,20 @@ a {
     width: 124px;
     height: 83px;
     top: 170px;
-    left: 755px;
+    right: calc(50% - 200px);
     object-fit: cover;
 }
 
 .credits .navigation-pill-list {
     display: flex;
     flex-wrap: wrap;
-    width: 646px;
+    width: min(646px, 50%);
     align-items: flex-start;
     justify-content: flex-end;
     gap: 8px 8px;
     position: absolute;
     top: 170px;
-    left: 0;
+    left: 5%;
 }
 
 .credits .navigation-pill {
@@ -236,7 +245,7 @@ a {
     padding: 8px;
     position: absolute;
     top: 170px;
-    left: 153px;
+    left: calc(5% + 150px);
     border-radius: 8px;
 }
 
@@ -248,7 +257,7 @@ a {
     padding: 8px;
     position: absolute;
     top: 170px;
-    left: 79px;
+    left: calc(5% + 80px);
     border-radius: 8px;
 }
 
@@ -257,7 +266,7 @@ a {
     width: 336px;
     height: 106px;
     top: 291px;
-    left: 156px;
+    left: calc(5% + 150px);
 }
 
 .credits .overlap-group-2 {
@@ -304,8 +313,9 @@ a {
 
 .credits .credit-body {
     position: absolute;
-    width: 1200px;
-    height: 5625px;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 511px);
     top: 0;
     left: 0;
     background-color: #ffffff;
@@ -313,7 +323,7 @@ a {
 
 .credits .div-2 {
     position: absolute;
-    width: 1200px;
+    width: 100%;
     height: 99px;
     top: 0;
     left: 0;
@@ -321,15 +331,15 @@ a {
 
 .credits .overlap-group-3 {
     position: absolute;
-    width: 912px;
+    width: calc(100% - 288px);
     height: 99px;
     top: 0;
-    left: 288px;
+    right: 0;
 }
 
 .credits .header {
     flex-wrap: wrap;
-    width: 912px;
+    width: 100%;
     height: 99px;
     gap: 0px 24px;
     padding: 32px;
@@ -513,7 +523,7 @@ a {
 
 .credits .overlap-2 {
     position: absolute;
-    width: 1200px;
+    width: 100%;
     height: 511px;
     top: 99px;
     left: 0;
@@ -523,7 +533,7 @@ a {
 .credits .text-wrapper-5 {
     position: absolute;
     top: 225px;
-    left: 173px;
+    left: 10%;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
     color: #ffffff;
@@ -535,10 +545,10 @@ a {
 }
 
 .credits .image {
-    width: 637px;
+    width: min(637px, 45%);
     height: 445px;
     top: 33px;
-    left: 512px;
+    right: 5%;
     border-radius: 35px;
     position: absolute;
     object-fit: cover;
@@ -549,7 +559,8 @@ a {
     width: 371px;
     height: 67px;
     top: 728px;
-    left: 415px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #3951b3;
     border-radius: 25px;
 }
@@ -573,13 +584,13 @@ a {
     width: 165px;
     height: 165px;
     top: 875px;
-    left: 106px;
+    left: 10%;
     object-fit: cover;
 }
 
 .credits .online-training-2 {
     top: 1118px;
-    left: 106px;
+    left: 10%;
     position: absolute;
     width: 165px;
     height: 165px;
@@ -588,7 +599,7 @@ a {
 
 .credits .online-training-3 {
     top: 1350px;
-    left: 932px;
+    right: 10%;
     position: absolute;
     width: 165px;
     height: 165px;
@@ -597,7 +608,7 @@ a {
 
 .credits .online-training-4 {
     top: 1594px;
-    left: 932px;
+    right: 10%;
     position: absolute;
     width: 165px;
     height: 165px;
@@ -607,7 +618,7 @@ a {
 .credits .bui-gia-huy {
     position: absolute;
     top: 904px;
-    left: 355px;
+    left: calc(10% + 200px);
     font-family: var(--m3-display-medium-emphasized-font-family);
     font-weight: var(--m3-display-medium-emphasized-font-weight);
     color: #000000;
@@ -620,7 +631,7 @@ a {
 .credits .dang-minh-tam {
     position: absolute;
     top: 1391px;
-    left: 510px;
+    right: calc(10% + 200px);
     font-family: var(--m3-display-medium-emphasized-font-family);
     font-weight: var(--m3-display-medium-emphasized-font-weight);
     color: #000000;
@@ -634,7 +645,7 @@ a {
 .credits .huynh-minh-nam {
     position: absolute;
     top: 1624px;
-    left: 477px;
+    right: calc(10% + 240px);
     font-family: var(--m3-display-medium-emphasized-font-family);
     font-weight: var(--m3-display-medium-emphasized-font-weight);
     color: #000000;
@@ -648,7 +659,7 @@ a {
 .credits .bui-duc-toan {
     position: absolute;
     top: 1148px;
-    left: 355px;
+    left: calc(10% + 200px);
     font-family: var(--m3-display-medium-emphasized-font-family);
     font-weight: var(--m3-display-medium-emphasized-font-weight);
     color: #000000;
@@ -663,7 +674,8 @@ a {
     width: 320px;
     height: 81px;
     top: 1806px;
-    left: 440px;
+    left: 50%;
+    transform: translateX(-50%);
     background-image: url(https://c.animaapp.com/mfbzqk8myGtnOK/img/rectangle-19.svg);
     background-size: 100% 100%;
 }
@@ -685,7 +697,7 @@ a {
 
 .credits .text-wrapper-8 {
     top: 1917px;
-    left: 20px;
+    left: 2%;
     position: absolute;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
@@ -700,7 +712,7 @@ a {
 
 .credits .overlap-5 {
     position: absolute;
-    width: 1200px;
+    width: 100%;
     height: 730px;
     top: 1979px;
     left: 0;
@@ -708,7 +720,7 @@ a {
 
 .credits .text-wrapper-9 {
     top: 672px;
-    left: 947px;
+    right: 2%;
     position: absolute;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
@@ -722,7 +734,7 @@ a {
 }
 
 .credits .image-2 {
-    width: 1200px;
+    width: 100%;
     height: 674px;
     top: 0;
     left: 0;
@@ -732,7 +744,7 @@ a {
 
 .credits .overlap-6 {
     position: absolute;
-    width: 1200px;
+    width: 100%;
     height: 721px;
     top: 3407px;
     left: 0;
@@ -740,7 +752,7 @@ a {
 
 .credits .text-wrapper-10 {
     top: 0;
-    left: 20px;
+    left: 2%;
     position: absolute;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
@@ -754,7 +766,7 @@ a {
 }
 
 .credits .image-3 {
-    width: 1200px;
+    width: 100%;
     height: 671px;
     top: 50px;
     left: 0;
@@ -764,7 +776,7 @@ a {
 
 .credits .text-wrapper-11 {
     top: 4145px;
-    left: 949px;
+    right: 2%;
     position: absolute;
     font-family: var(--title-page-font-family);
     font-weight: var(--title-page-font-weight);
@@ -778,7 +790,7 @@ a {
 }
 
 .credits .image-4 {
-    width: 1200px;
+    width: 100%;
     height: 676px;
     top: 4218px;
     left: 0;
@@ -787,7 +799,7 @@ a {
 }
 
 .credits .image-5 {
-    width: 1200px;
+    width: 100%;
     height: 672px;
     top: 2717px;
     left: 0;
@@ -797,7 +809,7 @@ a {
 
 .credits .overlap-7 {
     position: absolute;
-    width: 1200px;
+    width: 100%;
     height: 731px;
     top: 4894px;
     left: 0;
@@ -808,7 +820,7 @@ a {
     position: absolute;
     height: 29px;
     top: 279px;
-    left: 85px;
+    left: 7%;
     font-family: "Inter", Helvetica;
     font-weight: 700;
     color: #ffffff;
@@ -822,7 +834,7 @@ a {
     position: absolute;
     height: 48px;
     top: 213px;
-    left: 85px;
+    left: 7%;
     font-family: "Inter", Helvetica;
     font-weight: 700;
     color: #ffffff;
@@ -834,10 +846,10 @@ a {
 
 .credits .businessman-choosing {
     position: absolute;
-    width: 626px;
+    width: min(626px, 45%);
     height: 443px;
     top: 120px;
-    left: 488px;
+    right: 5%;
     border-radius: 25px;
     object-fit: cover;
 }
@@ -846,8 +858,68 @@ a {
     width: 260px;
     height: 70px;
     top: 342px;
-    left: 96px;
+    left: 8%;
     background-color: #ffffff;
     position: absolute;
     border-radius: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    :root {
+        --title-page-font-size: 36px;
+        --m3-display-medium-emphasized-font-size: 32px;
+    }
+
+    .credits .online-training,
+    .credits .online-training-2,
+    .credits .online-training-3,
+    .credits .online-training-4 {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --title-page-font-size: 28px;
+        --m3-display-medium-emphasized-font-size: 24px;
+        --single-line-body-base-font-size: 14px;
+    }
+
+    .credits .header {
+        padding: 16px;
+        flex-direction: column;
+        height: auto;
+        min-height: 120px;
+    }
+
+    .credits .ellipse {
+        width: 60%;
+    }
+
+    .credits .navigation-pill-list {
+        width: 90%;
+        left: 5%;
+    }
+
+    .credits .online-training,
+    .credits .online-training-2,
+    .credits .online-training-3,
+    .credits .online-training-4 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .credits .overlap-3 {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .credits .overlap-4 {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
